@@ -11,6 +11,7 @@ import static org.junit.matchers.JUnitMatchers.containsString;
 public class TestGreeter {
 
   private Greeter greeter;
+  private String __gret;
 
   @Before
   public void setup() {
@@ -26,10 +27,17 @@ public class TestGreeter {
 
   @Test
   public void greetShouldIncludeGreetingPhrase() {
-    
-	  
-	  String someone = "World";
+    String someone = "World";
 
     assertThat(greeter.greet(someone).length(), is(greaterThan(someone.length())));
   }
+
+	public String get__gret() {
+		return __gret;
+	}
+	
+	public void set__gret(String __gret) {
+		this.__gret = __gret;
+	}
+	  
 }
