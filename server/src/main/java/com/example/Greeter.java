@@ -14,7 +14,7 @@ public class Greeter {
 
  /***
  * Method
- * @param someone
+ * @param someone cadena 2345
  * @return una cadena
  */
   public final String greet(final String someone) {
